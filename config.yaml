@@ -1,0 +1,18 @@
+terraform:
+  dir: "./"
+  vars_file: "variables.tfvars"
+
+commands:
+  - name: init
+    description: "Initialize Terraform"
+  - name: plan
+    description: "Generate and show an execution plan"
+  - name: apply
+    description: "Apply the changes required to reach the desired state"
+    confirm: true
+  - name: destroy
+    description: "Destroy the Terraform-managed infrastructure"
+    confirm: true
+
+environment:
+  TF_VAR_key: "value"
